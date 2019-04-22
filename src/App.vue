@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <Header/>
-      <Content/>
+      <div class="container">
+        <Content/>
+      </div>
     <Footer/>
     <!-- <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
