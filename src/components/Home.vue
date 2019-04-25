@@ -5,7 +5,7 @@
             <button @click="mudar">aqui</button>
             <br>
             <div>
-                <v-layout align-center justify-space-around :class="[display ? 'column' : 'row']">
+                <v-layout align-center justify-space-around v-bind:class="[display ? 'column' : 'row']">
                     <CardContent>
                     
                     </CardContent>
@@ -35,6 +35,11 @@ import CardContent from '@/layouts/CardContent.vue'
 
 export default {
     name: 'Home',
+    data: function() {
+        return {
+            display: true
+        }
+    },
     components: {
         Card,
         CardContent
@@ -43,9 +48,6 @@ export default {
         mudar() {
             this.display = !this.display;
         }
-    },
-    computed: {
-        display = false;
     }
 }
 </script>
