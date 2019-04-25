@@ -1,8 +1,20 @@
 <template>
     <div>
-         <v-card class="elevation-7" id="content">
+        <v-card class="elevation-7" id="content">
         <div class="container">
-            <slot></slot>
+            <slot>
+                <h1>Conteúdo</h1>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+                <p>Algo</p>
+            </slot>
         </div>
     </v-card>
     </div>

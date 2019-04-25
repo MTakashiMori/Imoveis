@@ -5,22 +5,42 @@
             <button @click="mudar">aqui</button>
             <br>
             <div>
-                <v-layout align-center justify-space-around v-bind:class="[display ? 'column' : 'row']">
-                    <CardContent>
                     
-                    </CardContent>
+
+                <v-layout 
+                v-bind:class="[display ? 'column' : 'row']">
+                    <v-flex grow>
+                           <CardContent></CardContent>
+                           <CardContent></CardContent>
+                    </v-flex>
+                    <!-- <v-flex xs1></v-flex>
                     <br>
-                    <CardContent>
-                        
-                    </CardContent>
+                    <v-flex xs3>
+                           <CardContent></CardContent>
+                    </v-flex>
+                    <v-flex xs1></v-flex>
                     <br>
-                    <CardContent>
-                        
-                    </CardContent>
+                    <v-flex xs3>
+                           <CardContent></CardContent>
+                    </v-flex>
                     <br>
-                    <CardContent>
-                        
-                    </CardContent>
+
+                    <br>
+                     <v-flex xs3>
+                           <CardContent></CardContent>
+                    </v-flex>
+                    <v-flex xs1></v-flex>
+                    <br>
+                    <v-flex xs3>
+                           <CardContent></CardContent>
+                    </v-flex>
+                    <v-flex xs1></v-flex>
+                    <br>
+                    <v-flex xs3>
+                           <CardContent></CardContent>
+                    </v-flex>
+                    <br> -->
+
                 </v-layout>
             </div>
             
