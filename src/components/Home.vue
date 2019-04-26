@@ -1,7 +1,6 @@
 <template>
     <div>
-        <Card>
-            <h1>Ofertas</h1>
+        <Card title="Ofertas">
             <button @click="mudar">aqui</button>
             <br>
             <div>
