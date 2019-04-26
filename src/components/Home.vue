@@ -5,43 +5,17 @@
             <button @click="mudar">aqui</button>
             <br>
             <div>
-                    
+                <v-container grid-list-md>
 
-                <v-layout 
-                v-bind:class="[display ? 'column' : 'row']">
-                    <v-flex grow>
-                           <CardContent></CardContent>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <!-- <v-flex xs1></v-flex>
-                    <br>
-                    <v-flex xs3>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <v-flex xs1></v-flex>
-                    <br>
-                    <v-flex xs3>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <br>
+                    <v-layout row wrap>
+                        <v-flex v-for="i in 20" :key="`6${i}`" 
+                            v-bind:class="[display ? 'xs12' : 'xs4']">
+                            <CardContent></CardContent>
+                        </v-flex>
+                    </v-layout>
 
-                    <br>
-                     <v-flex xs3>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <v-flex xs1></v-flex>
-                    <br>
-                    <v-flex xs3>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <v-flex xs1></v-flex>
-                    <br>
-                    <v-flex xs3>
-                           <CardContent></CardContent>
-                    </v-flex>
-                    <br> -->
+                </v-container>
 
-                </v-layout>
             </div>
             
         </Card>
